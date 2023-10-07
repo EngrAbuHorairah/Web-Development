@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        its my Arrow function program.
+        <p id="Greet">
+            Welcome
+        </p>
+    </div>
+    <script>
+        // setTimeout(() => {console.log("Welcome")},3000);
+
+        let obj={
+            greeting: "Welcome to ",
+            name:["Ali", "Ahmed", "Rashad", "Alia", "Amina"],
+            
+
+            show(){
+                this.name.forEach(element => {
+                    document.getElementById(`Greet`).innerHTML = element;
+                });
+            }
+        }
+
+        obj.show();
+
+        num = [1,2,3,4,5,6,7,8,9,0];
+
+        num.forEach(element => {
+            console.log(element);
+        });
+        
+    </script>
+</body>
+</html>

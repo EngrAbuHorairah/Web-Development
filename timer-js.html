@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and Date</title>
+    <style>
+        .container{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            background-color: aqua;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="time" id="time">
+            Now time up to date
+        </p>
+    </div>
+
+    <script>
+
+        setInterval(update,1000);
+        function update(){
+            document.getElementById(`time`).innerHTML = new Date();
+        }
+    </script>
+    
+</body>
+</html>
